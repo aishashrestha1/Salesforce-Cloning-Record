@@ -1,0 +1,29 @@
+<apex:page standardController="TTL_Core__Deal__c" extensions="SampleGrant" sidebar="false" showHeader="false" showQuickActionVfHeader="false" >
+
+ <script>
+    #box{ text-align: center;}
+    
+    </script>
+<apex:form >
+ 
+    
+          
+                <div id ="box">
+   <apex:pageblock >
+            <apex:pageBlockSection >Clone Associate Party</apex:pageBlockSection>
+            </apex:pageblock>
+                </div>
+      <apex:pageblock >
+        <apex:pageblockSection >
+            <apex:pageblockSectionItem >Enter the Listing Id:</apex:pageblockSectionItem>
+                                    
+            <apex:pageblockSectionItem ><apex:inputtext value="{!idOfRec}" /></apex:pageblockSectionItem>      
+           
+        </apex:pageblockSection>
+        <apex:pageblockButtons location="bottom">
+            <apex:commandButton value="Clone" action="{!cloneRec}" />
+        </apex:pageblockButtons>
+    </apex:pageblock>   
+</apex:form>
+
+</apex:page>
